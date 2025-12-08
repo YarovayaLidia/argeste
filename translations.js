@@ -38,7 +38,7 @@ const translations = {
         'about-title': 'Our Family Story',
         'about-p1': 'For three generations, our family has been sharing the joy of fishing with visitors from around the world. What started as a passion has grown into a cherished family business.',
         'about-p2': 'We believe in sustainable fishing practices, respecting nature, and creating unforgettable memories for our guests. Every tour is a personal experience guided by family members who know these waters like the back of their hands.',
-        'about-p3': 'Our commitment is simple: to share our love for the outdoors and ensure you have an amazing adventure, whether you\'re a first-timer or an experienced angler.',
+        'about-p3': 'Our commitment is simple: to share our love for the outdoors and ensure you have an amazing adventure, whether you're a first-timer or an experienced angler.',
         'btn-join': 'Join Our Family Adventure',
 
         // Gallery Section

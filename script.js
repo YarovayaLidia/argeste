@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
             
-            if (scrollY >= sectionTop - 100) {
+            if (window.scrollY >= sectionTop - 100) {
                 current = section.getAttribute('id');
             }
         });
