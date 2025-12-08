@@ -74,6 +74,8 @@ const translations = {
         'btn-submit': 'Send Inquiry',
         'form-success': 'Thank you! We\'ll get back to you soon.',
         'form-error': 'Please fill in all required fields.',
+        'form-error-email': 'Please enter a valid email address.',
+        'form-error-date': 'Please select a future date.',
 
         // Footer
         'footer-text': 'Creating unforgettable fishing memories since 1950',
@@ -156,6 +158,8 @@ const translations = {
         'btn-submit': 'Enviar Consulta',
         'form-success': '¡Gracias! Te contactaremos pronto.',
         'form-error': 'Por favor completa todos los campos requeridos.',
+        'form-error-email': 'Por favor ingresa un correo electrónico válido.',
+        'form-error-date': 'Por favor selecciona una fecha futura.',
 
         // Pie de página
         'footer-text': 'Creando recuerdos de pesca inolvidables desde 1950',
@@ -238,6 +242,8 @@ const translations = {
         'btn-submit': 'Invia Richiesta',
         'form-success': 'Grazie! Ti contatteremo presto.',
         'form-error': 'Per favore compila tutti i campi obbligatori.',
+        'form-error-email': 'Per favore inserisci un indirizzo email valido.',
+        'form-error-date': 'Per favore seleziona una data futura.',
 
         // Piè di pagina
         'footer-text': 'Creiamo ricordi di pesca indimenticabili dal 1950',

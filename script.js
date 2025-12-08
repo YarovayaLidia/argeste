@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(formData.email)) {
-                showFormMessage('error', 'Please enter a valid email address.');
+                showFormMessage('error', translations[currentLanguage]['form-error-email']);
                 return;
             }
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             today.setHours(0, 0, 0, 0);
             
             if (selectedDate < today) {
-                showFormMessage('error', 'Please select a future date.');
+                showFormMessage('error', translations[currentLanguage]['form-error-date']);
                 return;
             }
 
