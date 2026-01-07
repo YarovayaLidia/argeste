@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://wa.me">
     <link rel="preconnect" href="https://www.google.com">
     <link rel="preconnect" href="https://maps.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="./assets/video/Argeste.mp4" as="video" type="video/mp4">
     <link rel="icon" type="image/x-icon" href="./assets/images/LogoFinale-03.ico">
     <link rel="stylesheet" href="./assets/styles.css">
@@ -140,23 +143,22 @@
             <div class="footer__col">
                 <h4 class="footer__heading">Useful information</h4>
                 <ul class="footer__links">
-                    <li><a href="#" class="footer__link">GDPR</a></li>
-                    <li><a href="#" class="footer__link">Privacy policy</a></li>
-                    <li><a href="#" class="footer__link">Cookies</a></li>
-                    <li><a href="#" class="footer__link">Contract</a></li>
-                    <li><a href="#" class="footer__link">Terms of service</a></li>
-                    <li><a href="#" class="footer__link">Cancellation policy</a></li>
+                    <li><a href="gdpr.html" class="footer__link">GDPR</a></li>
+                    <li><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
+                    <li><a href="cookies.html" class="footer__link">Cookies</a></li>
+                    <li><a href="terms-of-service.html" class="footer__link">Terms of service</a></li>
+                    <li><a href="cancellation-policy.html" class="footer__link">Cancellation policy</a></li>
                     <li><a href="404.html" class="footer__link">Error 404</a></li>
                 </ul>
-                <div class="footer__social">
-                    <a href="https://www.instagram.com/pescaturismo.bosa_argeste/" target="_blank" class="footer__social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com" target="_blank" class="footer__social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.tiktok.com" target="_blank" class="footer__social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                </div>
             </div>
             <div class="footer__col">
                 <h4 class="footer__heading">Address</h4>
                 <p class="footer__address">Lungofiume Temo<br>Bosa<br> Sardinia<br> Italy<br>+39 123 456 7890<br>pescaturismobosa@gmail.com</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/pescaturismo.bosa_argeste/" target="_blank" class="footer__social-link" title="Instagram"><img src="./assets/images/instagram.png" alt="Instagram" width="20" height="20"></a>
+                    <a href="https://www.youtube.com" target="_blank" class="footer__social-link" title="YouTube"><img src="./assets/images/youtube.png" alt="YouTube" width="20" height="20"></a>
+                    <a href="https://www.tiktok.com" target="_blank" class="footer__social-link" title="TikTok"><img src="./assets/images/tik_tok.png" alt="TikTok" width="20" height="20"></a>
+                </div>
             </div>
             <div class="footer__col footer__col--map">
                 <h4 class="footer__heading">Map</h4>
@@ -187,7 +189,7 @@
             document.getElementById('mySidebar').style.width = '0';
         }
 
-        // Set active menu item
+        // Contact form submission handler: basic mailto
         document.addEventListener('DOMContentLoaded', function() {
             const currentPage = window.location.pathname.split('/').pop();
             const navLinks = document.querySelectorAll('.nav__link, .sidebar a:not(.closebtn)');
@@ -199,38 +201,35 @@
                 }
             });
 
-            // Contact form submission handler
             const contactForm = document.getElementById('contact-form');
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-
-                    // Collect form data
-                    const formData = new FormData(this);
+                    const formData = new FormData(contactForm);
                     const data = {
-                        name: formData.get('name'),
-                        email: formData.get('email'),
-                        phone: formData.get('phone'),
-                        subject: formData.get('subject'),
-                        message: formData.get('message')
+                        name: formData.get('name') || '',
+                        email: formData.get('email') || '',
+                        phone: formData.get('phone') || '',
+                        subject: formData.get('subject') || '',
+                        message: formData.get('message') || ''
                     };
 
-                    // Immediately show thank you message to confirm submission
-                    document.getElementById('contact-form').style.display = 'none';
-                    document.getElementById('thank-you-message').style.display = 'block';
+                    const subject = `Website contact: ${data.subject}`;
+                    const body = [
+                        `Name: ${data.name}`,
+                        `Email: ${data.email}`,
+                        `Phone: ${data.phone}`,
+                        '',
+                        'Message:',
+                        data.message
+                    ].join('\n');
 
-                    // Send to backend (using fetch API)
-                    fetch('/handle-contact-form.php', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(data)
-                    })
-                    .then(response => response.json())
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
+                    const mailtoLink = `mailto:pescaturismobosa@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    window.location.href = mailtoLink;
+
+                    // Show confirmation on the page
+                    contactForm.style.display = 'none';
+                    document.getElementById('thank-you-message').style.display = 'block';
                 });
             }
         });

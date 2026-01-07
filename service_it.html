@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tour autentici di pesca in Sardegna con snorkeling ed esperienze locali.">
-    <meta name="keywords" content="cose da fare in Sardegna, divertimento in Sardegna, tour di pesca Sardegna, pescaturismo Bosa, esperienze locali Sardegna">
-    <title>Pescaturismo Bosa Sardegna, tour di pesca Sardegna</title>
+    <meta name="description" content="Discover our Sardinian fishing tourism services in Bosa: traditional fishing trips, snorkeling adventures and fresh seafood prepared on board in crystal-clear waters.">
+    <meta name="keywords" content="pescaturismo Sardegna, servizi pescaturismo Bosa, traditional fishing tours Sardinia, snorkeling tours Bosa, fishing trips Sardinia, boat experiences Bosa, fresh fish on board, Mediterranean fishing tourism">
+    <title>Pescaturismo Bosa Sardegna, fishing tour Sardinia</title>
     <link rel="preconnect" href="https://wa.me">
     <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="./assets/video/Argeste.mp4" as="video" type="video/mp4">
-    <link rel="icon" type="image/x-icon" href="./assets/images/LogoFinale-03.ico">
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/Logo%20Finale-03.ico">
+    <link rel="preload" href="./assets/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/styles.css"></noscript>
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
  
@@ -20,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index_it.html">
-                <img src="./assets/images/LogoArgeste.webp" alt="logo pescaturismo Argeste Bosa" width="80" height="80">
+                <img src="./assets/images/LogoArgeste.webp" alt="logo pescaturismo Argeste Bosa" width="80" height="80" fetchpriority="high">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,70 +54,40 @@
     </nav>
 
     <main>
-
-    <!--SERVICES HERO SECTION-->
-    <div class="services-hero"></div>
-
-    <!--SERVICES INTRO SECTION-->
-    <section class="services-intro">
-        <img src="./assets/images/fish.png" alt="Pesce decorativo" class="services-fish-decoration">
-        <img src="./assets/images/fish.png" alt="Pesce decorativo" class="services-fish-decoration-right">
-        <div class="services-intro__container">
-            <h2 class="services-intro__title">Sperimenta il Pescaturismo Autentico della Sardegna</h2>
-            <p class="services-intro__description">
-                Scopri il meglio della Sardegna costiera con la nostra ampia gamma di servizi. Dalle spedizioni di pesca tradizionali alle avventure di snorkeling e alla cena con pesce fresco, ogni esperienza è progettata per connetterti con l'autentico patrimonio marittimo di Bosa. Il nostro team di esperti assicura ricordi indimenticabili sulle cristalline acque del Mediterraneo.
-            </p>
-        </div>
-    </section>
-
-    <!--SERVICES CARDS SECTION-->
-    <div class="services-container">
-        <div class="cards">
-            <div class="card">
-                <img src="./assets/images/pescaturismo.webp" alt="Pesca" class="card-photo">
-                <img src="./assets/images/sea.webp" alt="Icona Pesca" class="card-icon">
-                <h2>Pesca</h2>
-                <p>Sperimenta la pesca tradizionale con esperti locali. Impara le tecniche di pesca autentiche sulle bellissime acque della Sardegna. Perfetto per principianti e pescatori esperti.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/images/sea.webp" alt="Snorkeling" class="card-photo">
-                <img src="./assets/images/pescefresco.webp" alt="Icona Snorkeling" class="card-icon">
-                <h2>Snorkeling</h2>
-                <p>Esplora la vivace vita marina e le cristalline acque del Mediterraneo. Scopri pesci colorati, barriere coralline e paesaggi sottomarini in una delle destinazioni di immersione più belle del mondo.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/images/food.webp" alt="Pranzo a bordo" class="card-photo">
-                <img src="./assets/images/pescaturismo.webp" alt="Pranzo a bordo con a base di pesce fresco" class="card-icon">
-                <h2>Pranzo a bordo</h2>
-                <p>Goditi piatti deliziosi preparati a bordo con il pescato più fresco del giorno. Sperimenta l'autentica cucina sarda mentre guardi il tramonto sul mare.</p>
-            </div>
-        </div>
-    </div>
-
-           <!--TOUR DETAILS SECTION-->
+        <!--SERVICES HERO SECTION-->
+        <section class="services-hero" aria-labelledby="services-hero-title">
+            <h1 id="services-hero-title" class="visually-hidden">I nostri servizi</h1>
+        </section>
+ 
+               <!--TOUR DETAILS SECTION-->
         <section class="tour-details">
             <div class="tour-details__container">
                 <div class="tour-details__header">
-                    <h2 class="info-section__heading faq__subtitle" style="text-align: center; padding-bottom: 2px; font-weight: bold;">Pianifica la tua avventura</h2>
-                    <h3 class="info-section__heading" style="padding-bottom: 30px; text-align: center">INFORMAZIONI E PROGRAMMA DEL TOUR</h3>
+                            <img src="./assets/images/fish.png" alt="Decorative fish" class="services-fish-decoration">
+            <img src="./assets/images/fish.png" alt="Decorative fish" class="services-fish-decoration-right">
+            <div class="services-intro__container">
+                <h2 class="info-section__heading faq__subtitle" style="text-align: center; padding-bottom: 2px; font-weight: bold;">Vivi il vero pescaturismo della Sardegna</h2>
+                <h3 class="services-intro__title" style="text-align: center;">INFORMAZIONI E PROGRAMMA DEL TOUR</h3>
+                <p class="services-intro__description" style="text-align: center;"> Scopri il meglio della Sardegna costiera con le nostre esperienze di mare. Dalle uscite di pesca tradizionale alle avventure di snorkeling nelle acque cristalline, fino alla degustazione di pesce freschissimo cucinato a bordo, ogni servizio è pensato per farti vivere un contatto autentico con il patrimonio marittimo di Bosa. Il nostro equipaggio locale ed esperto ti accoglierà a bordo con passione e ospitalità, accompagnandoti in un viaggio fatto di natura, tradizione e sapori genuini. Un’esperienza unica di pescaturismo in Sardegna, per creare ricordi indimenticabili nel cuore del Mediterraneo.
+                </p>
                 </div>
                 <div class="tour-hero-card">
                     <div class="tour-hero__info">
-                        <p class="tour-hero__eyebrow">Giornata in mare · Equipaggio locale</p>
-                        <h4 class="tour-hero__title">Escursione Pesca & Snorkeling a Bosa</h4>
-                        <p class="tour-hero__text">Mezza giornata su una barca a conduzione familiare: pesca, soste per snorkeling e pescato fresco cucinato a bordo.</p>
+                        <p class="tour-hero__eyebrow">Giornata al mare · Equipaggio locale</p>
+                        <h4 class="tour-hero__title">Bosa Pesca & Snorkeling</h4>
+                        <p class="tour-hero__text">Mezza giornata su barca a gestione familiare: pesca, soste snorkeling e pescato cucinato a bordo.</p>
                         <div class="tour-meta">
                             <div class="meta-badge"><i class="fas fa-clock"></i> 4-6 ore</div>
-                            <div class="meta-badge"><i class="fas fa-users"></i> Max 10 ospiti</div>
+                            <div class="meta-badge"><i class="fas fa-users"></i> Max 10 persone</div>
                             <div class="meta-badge"><i class="fas fa-calendar-alt"></i> Apr - Ott</div>
-                            <div class="meta-badge"><i class="fas fa-water"></i> Nuoto & snorkeling</div>
+                            <div class="meta-badge"><i class="fas fa-water"></i> Nuoto e snorkeling</div>
                         </div>
                     </div>
                     <div class="tour-hero__cta">
                         <div class="price-chip">Prezzo su richiesta</div>
-                        <p class="price-note">Condividi le tue date e la dimensione del gruppo per un preventivo personalizzato.</p>
+                        <p class="price-note">Comunica le date e il numero di persone per un preventivo personalizzato.</p>
                         <a href="https://wa.me/393273875008" target="_blank" class="section__button tour-cta-button">
-                            <i class="fab fa-whatsapp me-2"></i> Richiedi Preventivo su WhatsApp
+                            <i class="fab fa-whatsapp me-2"></i> Richiedi preventivo su WhatsApp
                         </a>
                         <p class="cta-subnote"><i class="fas fa-bolt"></i> Risposte rapide, senza impegno.</p>
                     </div>
@@ -123,42 +97,42 @@
                     <div class="itinerary-card">
                         <div class="card-header">
                             <span class="card-label">Panoramica itinerario</span>
-                            <h4>Come si svolge la tua giornata</h4>
+                            <h4>Come si svolge la giornata</h4>
                         </div>
                         <ol class="itinerary-steps">
                             <li>
                                 <div class="step-time">09:00</div>
                                 <div class="step-content">
                                     <p class="step-title">Incontro e partenza</p>
-                                    <p class="step-text">Imbarco al Lungofiume Temo, caffè sul ponte, briefing sulla sicurezza, controllo attrezzatura.</p>
+                                    <p class="step-text">Imbarco al Lungofiume Temo, caffè a bordo, briefing sicurezza, controllo attrezzature.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="step-time">09:30</div>
                                 <div class="step-content">
                                     <p class="step-title">Pesca con l'equipaggio</p>
-                                    <p class="step-text">Prova le tecniche locali, tira le reti e impara i segreti della famiglia.</p>
+                                    <p class="step-text">Prova le tecniche locali, salpa le reti e scopri i segreti di famiglia.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="step-time">11:00</div>
                                 <div class="step-content">
-                                    <p class="step-title">Nuoto & snorkeling nelle baie</p>
-                                    <p class="step-text">Ancoraggio in calette turchesi per nuotare e fare snorkeling in acque cristalline.</p>
+                                    <p class="step-title">Soste per nuoto e snorkeling</p>
+                                    <p class="step-text">Sosta in cale turchesi per nuoto e snorkeling in acque limpide.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="step-time">12:00</div>
                                 <div class="step-content">
                                     <p class="step-title">Pranzo dal mare alla tavola</p>
-                                    <p class="step-text">Pescato fresco cucinato a bordo con sapori sardi e storie locali.</p>
+                                    <p class="step-text">Pescato fresco cucinato a bordo con sapori sardi e racconti locali.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="step-time">13:00-15:00</div>
                                 <div class="step-content">
-                                    <p class="step-title">Ritorno a Bosa</p>
-                                    <p class="step-text">Navigazione tranquilla verso casa; gli orari si adattano alle condizioni del mare e al tuo ritmo.</p>
+                                    <p class="step-title">Rientro a Bosa</p>
+                                    <p class="step-text">Navigazione tranquilla; orari flessibili in base al mare e al vostro ritmo.</p>
                                 </div>
                             </li>
                         </ol>
@@ -168,40 +142,40 @@
                         <div class="info-card">
                             <div class="card-header">
                                 <span class="card-label">Incluso</span>
-                                <h4>Cosa ottieni</h4>
+                                <h4>Cosa è incluso</h4>
                             </div>
                             <ul class="info-list">
-                                <li><i class="fas fa-check"></i> Attrezzatura da pesca e guida</li>
-                                <li><i class="fas fa-check"></i> Attrezzatura per snorkeling</li>
-                                <li><i class="fas fa-check"></i> Pranzo con pescato fresco a bordo</li>
-                                <li><i class="fas fa-check"></i> Acqua e bibite analcoliche</li>
-                                <li><i class="fas fa-check"></i> Storie dall'equipaggio locale</li>
+                                <li><i class="fas fa-check"></i> Attrezzatura da pesca e assistenza</li>
+                                <li><i class="fas fa-check"></i> Attrezzatura da snorkeling</li>
+                                <li><i class="fas fa-check"></i> Pranzo con pescato del giorno a bordo</li>
+                                <li><i class="fas fa-check"></i> Acqua e bevande analcoliche</li>
+                                <li><i class="fas fa-check"></i> Racconti di un equipaggio locale</li>
                             </ul>
                         </div>
 
                         <div class="info-card">
                             <div class="card-header">
-                                <span class="card-label">Buono a sapersi</span>
-                                <h4>Informazioni base</h4>
+                                <span class="card-label">Da sapere</span>
+                                <h4>Informazioni principali</h4>
                             </div>
                             <div class="info-grid">
-                                <div class="info-pill"><i class="fas fa-map-marker-alt"></i> Incontro: Lungofiume Temo</div>
-                                <div class="info-pill"><i class="fas fa-clock"></i> Partenza ore 09:00</div>
-                                <div class="info-pill"><i class="fas fa-anchor"></i> Ritorno 13:00-15:00</div>
-                                <div class="info-pill"><i class="fas fa-child"></i> Tutte le età benvenute</div>
-                                <div class="info-pill"><i class="fas fa-life-ring"></i> Giubbotti salvagente forniti</div>
-                                <div class="info-pill"><i class="fas fa-id-card"></i> Nessuna licenza necessaria</div>
+                                <div class="info-pill"><i class="fas fa-map-marker-alt"></i> Ritrovo: Lungofiume Temo</div>
+                                <div class="info-pill"><i class="fas fa-clock"></i> Partenza 09:00</div>
+                                <div class="info-pill"><i class="fas fa-anchor"></i> Rientro 13:00-15:00</div>
+                                <div class="info-pill"><i class="fas fa-child"></i> Benvenute tutte le età</div>
+                                <div class="info-pill"><i class="fas fa-life-ring"></i> Giubbotti di salvataggio forniti</div>
+                                <div class="info-pill"><i class="fas fa-id-card"></i> Nessuna patente richiesta</div>
                             </div>
                         </div>
 
                         <div class="info-card">
                             <div class="card-header">
-                                <span class="card-label">Porta con te</span>
-                                <h4>Bagaglio leggero</h4>
+                                <span class="card-label">Cosa portare</span>
+                                <h4>Viaggia leggero</h4>
                             </div>
                             <ul class="info-list">
-                                <li><i class="fas fa-check"></i> Costume da bagno e asciugamano</li>
-                                <li><i class="fas fa-check"></i> Protezione solare (cappello, crema SPF)</li>
+                                <li><i class="fas fa-check"></i> Costume e asciugamano</li>
+                                <li><i class="fas fa-check"></i> Protezione solare (cappello, SPF)</li>
                                 <li><i class="fas fa-check"></i> Strato leggero per la brezza marina</li>
                                 <li><i class="fas fa-check"></i> Borraccia riutilizzabile</li>
                             </ul>
@@ -210,7 +184,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <!--FOOTER-->
@@ -221,36 +194,35 @@
                 <p class="footer__text"> Tutte le immagini e i contenuti sono proprietà di Pescaturismo Argeste.<br> L'uso non autorizzato è vietato.<br>© 2024 Pescaturismo Argeste.</p>   
             </div>
             <div class="footer__col">
-                <h4 class="footer__heading">Informazioni Utili</h4>
+                <h4 class="footer__heading">Informazioni utili</h4>
                 <ul class="footer__links">
-                    <li><a href="#" class="footer__link">GDPR</a></li>
-                    <li><a href="#" class="footer__link">Politica sulla privacy</a></li>
-                    <li><a href="#" class="footer__link">Cookie</a></li>
-                    <li><a href="#" class="footer__link">Contratto</a></li>
-                    <li><a href="#" class="footer__link">Termini di servizio</a></li>
-                    <li><a href="#" class="footer__link">Politica di cancellazione</a></li>
+                    <li><a href="gdpr.html" class="footer__link">GDPR</a></li>
+                    <li><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
+                    <li><a href="cookies.html" class="footer__link">Cookies</a></li>
+                    <li><a href="terms-of-service.html" class="footer__link">Termini di servizio</a></li>
+                    <li><a href="cancellation-policy.html" class="footer__link">Politica di cancellazione</a></li>
+                    <li><a href="404.html" class="footer__link">Error 404</a></li>
                 </ul>
-                <div class="footer__social">
-                    <a href="https://www.instagram.com/pescaturismo.bosa_argeste/" target="_blank" class="footer__social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com" target="_blank" class="footer__social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.tiktok.com" target="_blank" class="footer__social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                </div>
             </div>
             <div class="footer__col">
                 <h4 class="footer__heading">Indirizzo</h4>
-                <p class="footer__address">Lungofiume Temo<br>Bosa<br> Sardegna<br> Italia<br>+39 123 456 7890<br>pescaturismobosa@gmail.com</p>
+                <p class="footer__address">Lungofiume Temo<br>Bosa<br> Sardegna<br> Italia<br>+39 327 387 5008<br>pescaturismobosa@gmail.com</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/pescaturismo.bosa_argeste/" target="_blank" class="footer__social-link" title="Instagram"><img src="./assets/images/instagram.png" alt="Instagram" width="20" height="20"></a>
+                    <a href="https://www.youtube.com" target="_blank" class="footer__social-link" title="YouTube"><img src="./assets/images/youtube.png" alt="YouTube" width="20" height="20"></a>
+                    <a href="https://www.tiktok.com" target="_blank" class="footer__social-link" title="TikTok"><img src="./assets/images/tik_tok.png" alt="TikTok" width="20" height="20"></a>
+                </div>
             </div>
             <div class="footer__col footer__col--map">
                 <h4 class="footer__heading">Mappa</h4>
                 <div class="footer__map">
-                    <iframe class="lazy-map" title="Mappa Bosa Sardegna" data-src="https://www.google.com/maps?q=Lungofiume%20Temo%20Bosa%20Sardegna%20Italia&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Mappa Bosa Sardegna" id="footer-map" data-src="https://www.google.com/maps?q=Lungofiume%20Temo%20Bosa%20Sardegna%20Italia&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
-        </div>
+            </div>        </div>
     </footer>
     
     <script>
-        // Selettore lingua
+        // Language switcher
         document.getElementById('language-select').addEventListener('change', function() {
             const lang = this.value;
             if (lang === 'it') {
@@ -261,7 +233,7 @@
         });
     </script>
     <script>
-        // Cambio colore barra navigazione al scorrimento
+        // Navbar scroll color change
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
@@ -272,11 +244,11 @@
         });
     </script>
     <script>
-        // Lazy load Google Maps per ridurre JS non usato finche' non serve
+        // Lazy load Google Maps iframe only when in view to cut unused JS
         (function() {
-            const maps = document.querySelectorAll('.lazy-map');
-            if (!maps.length) return;
-            const loadMap = (map) => {
+            const map = document.getElementById('footer-map');
+            if (!map) return;
+            const loadMap = () => {
                 if (map.dataset.src) {
                     map.src = map.dataset.src;
                     map.removeAttribute('data-src');
@@ -286,14 +258,14 @@
                 const observer = new IntersectionObserver((entries, obs) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            loadMap(entry.target);
-                            obs.unobserve(entry.target);
+                            loadMap();
+                            obs.disconnect();
                         }
                     });
                 }, { rootMargin: '200px 0px' });
-                maps.forEach(map => observer.observe(map));
+                observer.observe(map);
             } else {
-                maps.forEach(loadMap);
+                loadMap();
             }
         })();
     </script>
